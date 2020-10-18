@@ -35,6 +35,8 @@ Ie = estimated color image
 
 # network Architecture
 
+![architecture](https://user-images.githubusercontent.com/57025585/96368949-e253b980-1191-11eb-8c2b-2787d56de835.png)
+
 network is in the form of **U-net**.it has 2 parts, encoder and decoder.
 
 * encoder => employ several mixed attention blocks and ISLs to obtain semantic features.
