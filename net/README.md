@@ -33,7 +33,7 @@ theta => parameters of network
 Ir => low-light raw image Ir
 Ie = estimated color image
 
-## network Architecture
+# network Architecture
 
 network is in the form of **U-net**.it has 2 parts, encoder and decoder.
 
@@ -48,3 +48,14 @@ network is in the form of **U-net**.it has 2 parts, encoder and decoder.
 * MAB => Mixed Attention Block
 * CAB => Channel Attention Block
 
+## Inverted Shuffle Layer
+
+pooling operation usually abandons useful information in the forword process whether it is max pooling or average pooling.
+
+-> ISL ( new proposed pooling operation) includes inverted shuffle and convolution operation
+
+-> after an inverted shuffle operation, the size of the feature map reduces to half of the original and the number of channels quadruples.
+
+-> convolution layer with 1x1 kernels is perfoemed after the inverted shuffle,which plays a role in selecting useful information while compressing the number of channels.
+
+-> ISL not only has the effect of reducing the computation as a pooling layer but also makes the network more flexible to select features.
