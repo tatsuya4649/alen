@@ -6,7 +6,7 @@
 
 * spatial => focus on denoising by taking advantage of the non-local correlation in the image => **remove noise**
 
-![mixed_attention_block](http://user-imgaes.githubusercontent.com/57025585/96367007-30fb5680-1186-11eb-9d3f-8e42d2af50f0.png)
+![mixed_attention_block](https://user-imgaes.githubusercontent.com/57025585/96367007-30fb5680-1186-11eb-9d3f-8e42d2af50f0.png)
 
 * channel => guide the network to refine redundant color features => **color restoration**
 
